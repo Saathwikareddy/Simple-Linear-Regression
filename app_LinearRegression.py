@@ -99,13 +99,5 @@ tip=model.predict(scaler.transform([[bill]]))[0]
 st.markdown(f'<div class="prediction-box">Predicted Tip: {tip:.2f}</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
-# m & c #
-st.markdown(f"""
-            <div class="card">
-            <h3>Model Interception</h3>
-            <p><b>Slope(Total bill) (m):</b> {model.coef_[0]:.3f}</p>
-            <p><b>Slope(Size) (m):</b> {model.coef_[1]:.3f}</p>
-            <p><b>Intercept (c):</b> {model.intercept_:.3f}</p>
-            <p>Tip Depends on the <b> Bill amount </b> and <b> number of people </b></p>
-            </div>
-            """, unsafe_allow_html=True)
+
+
